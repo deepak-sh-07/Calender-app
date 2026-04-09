@@ -43,7 +43,7 @@ src/
 ├── utils/                
 │   └── dateUtils.js
 │
-├── pages/ (ONLY if routing)
+├── pages/ 
 │   └── Calendar.jsx      
 │
 ├── App.jsx
@@ -101,7 +101,12 @@ And your `index.css`:
 
 ## 📸 Preview
 
-> Add screenshots or a demo GIF here for better impact
+## 📸 Preview
+
+<p align="center">
+  <img src="./screenshots/one.png" width="45%" />
+  <img src="./screenshots/two.png" width="45%" />
+</p>
 
 ---
 
