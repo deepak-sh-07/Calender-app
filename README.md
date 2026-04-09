@@ -1,18 +1,141 @@
-# React + Vite
+# 📅 Modern Calendar App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, interactive, and responsive calendar application built with **React** and **Tailwind CSS**.
+Designed for simplicity, usability, and a smooth user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 📆 **Monthly Calendar View**
+* 🔄 **Next / Previous Month Navigation**
+* 🗓️ **Weekday Headers (Sun - Sat)**
+* 🔴 **Highlighted Weekends (Tinted Red)**
+* 📝 **Notes / Events Support**
+* 🎯 **Selected Date Highlighting**
+* ✨ **Smooth UI with Hover Effects**
+* ⚡ **Fast & Lightweight**
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+* **Frontend:** React (Vite / CRA)
+* **Styling:** Tailwind CSS
+* **State Management:** React Hooks
+* **Build Tool:** Vite / npm
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+
+```
+src/
+│
+├── components/
+│   └── calendar/
+│       ├── CalendarGrid.jsx
+│       ├── DayCell.jsx
+│       ├── MonthNavigation.jsx
+│       ├── NotesPanel.jsx
+│       ├── ThemeToggle.jsx
+│
+├── utils/                
+│   └── dateUtils.js
+│
+├── pages/ (ONLY if routing)
+│   └── Calendar.jsx      
+│
+├── App.jsx
+├── main.jsx
+├── index.css
+tailwind.config.js
+package.json
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/calendar-app.git
+cd calendar-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🎨 Tailwind Setup
+
+Make sure your `tailwind.config.js` includes:
+
+```js
+content: [
+  "./index.html",
+  "./src/**/*.{js,ts,jsx,tsx}",
+]
+```
+
+And your `index.css`:
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+---
+
+## 📸 Preview
+
+> Add screenshots or a demo GIF here for better impact
+
+---
+
+## 💡 Future Improvements
+
+* 📌 Add event persistence (LocalStorage / Database)
+* 🔔 Notifications & reminders
+* 🌙 Dark mode support
+* 📱 Mobile-first enhancements
+* 🔗 Google Calendar integration
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork this repo and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+## 👨‍💻 Author
+
+**Deepak Sharma**
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---

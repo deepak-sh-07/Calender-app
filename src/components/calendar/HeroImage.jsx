@@ -4,7 +4,7 @@ const MONTH_IMAGES = [
   "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800&h=400&fit=crop",
   "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&h=400&fit=crop",
   "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800&h=400&fit=crop",
-  "https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=800&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=800&h=400&fit=crop",
   "https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?w=800&h=400&fit=crop",
   "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=400&fit=crop",
   "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop",
@@ -14,6 +14,7 @@ const MONTH_IMAGES = [
   "https://images.unsplash.com/photo-1511593358241-7eea1f3c84e5?w=800&h=400&fit=crop",
   "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?w=800&h=400&fit=crop",
 ];
+
 
 const HeroImage = ({ currentDate, theme }) => {
   const [imageLoaded, setImageLoaded] = useState(false);

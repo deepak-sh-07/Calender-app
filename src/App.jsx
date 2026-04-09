@@ -1,4 +1,4 @@
-import Calendar from './pages/Calender';
+import Calendar from './pages/Calendar';
 
 // If using React Router:
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
