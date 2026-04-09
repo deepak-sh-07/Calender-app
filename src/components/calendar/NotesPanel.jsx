@@ -1,7 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { X, Plus, StickyNote, Calendar, Trash2 } from "lucide-react";
 
-const NotesPanel = ({ range, notes, setNotes, setRange, theme, monthPalette }) => {
+const NotesPanel = React.memo(({ range, notes, setNotes, setRange, theme, monthPalette }) => {
   const [noteText, setNoteText] = useState("");
   const [noteType, setNoteType] = useState("range");
 
@@ -36,7 +36,10 @@ const NotesPanel = ({ range, notes, setNotes, setRange, theme, monthPalette }) =
       newNote.type = "general";
       newNote.displayDate = "General Note";
     }
-    setNotes([newNote, ...notes]);
+
+    // ✅ FIXED (functional update)
+    setNotes((prev) => [newNote, ...prev]);
+
     setNoteText("");
   };
 
@@ -189,6 +192,6 @@ const NotesPanel = ({ range, notes, setNotes, setRange, theme, monthPalette }) =
       </div>
     </div>
   );
-};
+});
 
 export default NotesPanel;

@@ -22,7 +22,7 @@ export const MONTH_PALETTES = [
 ];
 
 const Calendar = () => {
-  const [range, setRange] = useState({ start: null, end: null });
+  const [range, setRange] = useState({ start: new Date(), end: null });
   const [notes, setNotes] = useState([]);
   const [currentDate, setCurrentDate] = useState(new Date());
   const [theme, setTheme] = useState("warm");
